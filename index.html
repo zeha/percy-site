@@ -9,7 +9,8 @@ title: namespace.at services
 <div id="home">
     {% for post in site.posts %}
   <div class="post">
-      <span>{{ post.date | date_to_string }}</span> &raquo; <b>{{ post.title }}</b>
+	{{ post.date | date_to_string }} &raquo; <b>{{ post.title }}</b><br/>
+	<small><a href=".{{ post.url }}">permalink</a></small><br/>
        <div class="postcontent">
           {{ post.content }}
        </div>
