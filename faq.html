@@ -1,0 +1,81 @@
+---
+layout: default
+title: percival faq
+---
+
+q: ich moechte dateien ueber http zur verfuegung stellen ("eine webseite")<br> 
+a: du kannst ein "public_html" Verzeichnis in deinem $HOME anlegen, dieses ist dann über https://ssl.namespace.at/~$USERNAME/ sichtbar.<br> 
+<br> 
+ 
+q: ich mag was kaputt machen<br> 
+a: moeglicherweise kannst du dir einen eigenen container rausschlagen. ask root<br> 
+<br> 
+ 
+q: silc plugin geht nimmer...<br> 
+a: beeble sollte wissen, was er tut/tun muss.<br> 
+<br> 
+ 
+q: kann ich eine andere shell haben?<br> 
+a: root kann dir das ändern (sıehe unten)<br> 
+<br> 
+ 
+q: mail user angelegt, aber der mta (exim) nimmt das mail nicht an<br> 
+a: damit exim den user kennt, muss man sich auch einmal via imap angemeldet haben...<br> 
+<br> 
+ 
+q: wie sehen die ssl zertifikate aus?<br> 
+a: sind CAcert oder StartCom Zertifikate, ausgestellt auf "*.namespace.at" (damit sollte sowohl ssl., svn., als auch percival.namespace.at matchen).<br> 
+<br> 
+ 
+q: warum erreicht mein mail client den smtp/tls nicht?<br> 
+a: weils keinen eigenen port fuer smtp/tls gibt. daher dem mail client beibringen, STARTTLS zu benutzen. (bei evolution: 'Whenever possible')<br> 
+<br> 
+ 
+q: mein mailclient kann kein ssl, aber ich moechte mein passwort doch nicht im klartext auf der leitung haben...<br> 
+a: sowohl smtp als auch imap seitig wird cram-md5 unterstuetzt, bitte dieses verwenden. (geht auch via ssl)<br> 
+<br> 
+ 
+q: was ist ueberhaupt der hostname?<br> 
+a: <code>percival.namespace.at</code> kann man immer als host fuer smtp+imap benutzen<br> 
+<br> 
+ 
+q: warum heisst die kiste percival?<br> 
+a: weil die <a href="http://www.sinfest.net/">sinfest</A> miezmiez so heisst, und mir nix besseres eingefallen ist. (pooch gibt's nicht mehr.)<br> 
+<br> 
+ 
+q: ich kann keine mails verschicken!? (fehlermeldung "unrouteable address" / "postfach existiert nicht")<br> 
+a: der smtpd ist nur fuer angemeldete benutzer ein mail relay. please LOGIN (= smtp auth).<br> 
+<br> 
+ 
+q: mein freund kann mir keine dateien vom typ .exe|com|&lt;bla&gt; schicken?<br> 
+a: aus sicherheitsgruenden abgeschaltet. am besten in ein tar/zip einpacken...<br> 
+<br> 
+ 
+q: wie sieht mein benutzername fuer imap/smtp aus?<br> 
+a: ala user@example.com<br> 
+<br> 
+ 
+q: wo ist das webmail?<br> 
+a: <a href="https://ssl.namespace.at/squirrelmail/">hier</a><br> 
+<br> 
+ 
+q: wen anschreien?<br> 
+a: den ch, aber ned schreien. wenns dringend is, +43676840320500<br> 
+<br> 
+ 
+q: wo soll ich mir am besten domains kaufen?<br> 
+a: <a href="http://www.easyname.eu/">hier</a> oder <a href="http://www.nessus.at/">hier</a>, die haben ahnung ;)<br> 
+<br> 
+ 
+q: ich brauch ein paket installiert, wuth?<br> 
+a: ask root<br> 
+<br> 
+ 
+q: wer is root am percival?<br> 
+a: beeble + ch<br> 
+<br> 
+ 
+q: gibts backup?<br> 
+a: jain. also, nein. f&uuml;r deine files sehr wahrscheinlich nicht. f&uuml;r ausgesuchtes zeug (user db...), gibts backup.<br> 
+<br> 
+

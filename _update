@@ -3,4 +3,4 @@ export GEM_HOME=$HOME/gems
 rm -r _site
 ~/gems/bin/jekyll $@
 chmod -R a+rX _site
-rsync --delete -crv _site/ /data/http/vhosts/blogs.namespace.at/htdocs/services/
+rsync --delete -ac _site/* /data/http/vhosts/namespace.at/percival/htdocs/
