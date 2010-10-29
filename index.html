@@ -1,0 +1,20 @@
+---
+layout: default
+title: namespace.at services
+---
+
+<a href="atom.xml">RSS feed</a><br/>
+<br/>
+
+<div id="home">
+    {% for post in site.posts %}
+  <div class="post">
+      <span>{{ post.date | date_to_string }}</span> &raquo; <b>{{ post.title }}</b>
+       <div class="postcontent">
+          {{ post.content }}
+       </div>
+	<br/>
+  </div>
+    {% endfor %}
+  </ul>
+</div>
